@@ -1,7 +1,6 @@
 {
-  "name": "react-graphql-contentful-appl",
+  "name": "seo-app",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

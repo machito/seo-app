@@ -1,5 +1,6 @@
 import { GraphQLClient, gql } from 'graphql-request';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const CONTENTFUL_SPACE_ID = "c9d8pfbjv17v";
 const CONTENTFUL_ACCESS_TOKEN = "1fLjvFcGn3g8sk4a73vzLjsqtfYwmqGkE1QFWcRo9RY";
@@ -38,7 +39,10 @@ export async function getStaticProps() {
 
 export default function Home({ pages }) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Blockchain is the present.</title>
+      </Head>
       <h1>Blockchain is the <s>future</s> <span className="present-heading">present</span>.</h1>
       <ol>
         {pages.map((page) => (
@@ -49,6 +53,6 @@ export default function Home({ pages }) {
           </li>
         ))}
       </ol>
-    </div>
+    </>
   );
 }

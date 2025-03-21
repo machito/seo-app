@@ -1,6 +1,6 @@
 # Programmatic SEO App
 
-**Objective**: Create an app that dynamically generates web pages with NextJS and Contentful.
+**Objective**: Create an app that dynamically generates web pages with NextJS and Contentful CMS.
 
 **Goals:**
 * Use AI to generate sample data
@@ -16,6 +16,7 @@
 * getStaticPaths() fetches all slugs from Contentful to dynamically generate pages
 * getStaticProps() fetches the page content for a specific slug
 * This is SEO ready: view-source:http://localhost:3000/understanding-nft-royalties
+* Deploying NextJS app to Netlify and Vercel
 
 **Next Steps:**
 * Integrate dotenv to use env variables
