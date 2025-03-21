@@ -1,0 +1,12 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background: #212121;
+    color: white;
+}
+a { color: white; }
+a:hover, .present-heading { color: #009fd1; }
+.present-heading { text-decoration: underline; }
+
+li { line-height: 25px; }
