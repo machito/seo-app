@@ -43,7 +43,7 @@ export default function Home({ pages }) {
       <Head>
         <title>Blockchain is the present.</title>
       </Head>
-      <h1>Blockchain is the <s>future</s> <span className="present-heading">present</span>.</h1>
+      <h1>Blockchain is the <s>future</s> <span>present</span>.</h1>
       <ol>
         {pages.map((page) => (
           <li key={page.slug}>
