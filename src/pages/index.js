@@ -39,8 +39,8 @@ export async function getStaticProps() {
 export default function Home({ pages }) {
   return (
     <div>
-      <h1>Blockchain is the <s>future</s> <span class="present-heading">present</span>.</h1>
-      <ul>
+      <h1>Blockchain is the <s>future</s> <span className="present-heading">present</span>.</h1>
+      <ol>
         {pages.map((page) => (
           <li key={page.slug}>
             <Link href={`/${page.slug}`}>
@@ -48,7 +48,7 @@ export default function Home({ pages }) {
             </Link>
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

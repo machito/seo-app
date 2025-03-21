@@ -1,5 +1,6 @@
 import { GraphQLClient, gql } from 'graphql-request';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const CONTENTFUL_SPACE_ID = "c9d8pfbjv17v";
 const CONTENTFUL_ACCESS_TOKEN = "1fLjvFcGn3g8sk4a73vzLjsqtfYwmqGkE1QFWcRo9RY";
@@ -55,6 +56,9 @@ export default function Page({ page }) {
 
   return (
     <div>
+      <Link href="/">
+        ← Back to Home
+      </Link>
       <h1>{page.title}</h1>
       <p>{page.metaDescription || 'No content available.'}</p>
     </div>

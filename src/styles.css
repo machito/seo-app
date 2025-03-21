@@ -1,12 +1,16 @@
 body {
     font-family: "Inter", Arial, sans-serif;
     margin: 20px;
+    padding: 20px;
     padding: 0;
     background: #212121;
     color: white;
+
 }
-a { color: white; }
+h1 { font-family: "Inter", Arial, sans-serif; font-size: 40px; }
 a:hover, .present-heading { color: #009fd1; }
 .present-heading { text-decoration: underline; }
 
-li { line-height: 25px; }
+ol { margin: 0; padding: 0; }
+li { list-style: none; font-weight: 800; font-size: 25px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+a { color: gray; text-decoration: none; transition: color 250ms ease; }
